@@ -1,0 +1,21 @@
+
+
+.csv tr::before {
+    content: counter(linenumber);
+    font-family: Ubuntu Mono, monospace;
+    font-size: 1em;
+    display: inline-block;
+    text-align: right;
+    margin-right: 16px;
+    margin-top: 8px;
+    width: 30px;
+}
+
+.csv tr{
+    counter-increment: linenumber;
+    margin-right: 16px;
+}
+
+.csv tr:nth-child(odd) td{
+    background: #eee;
+}
